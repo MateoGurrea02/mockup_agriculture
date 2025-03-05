@@ -1,6 +1,6 @@
 # Agriculture Mockup
 
-This repository is a mockup for a agriculture landing page, develop for Mateo Gurrea, feel free to edit a modify this mockup to your projects, only I want a mention o credit 😊
+This repository is a mockup for a agriculture landing page, develop for Mateo Gurrea, feel free to edit a modify this mockup to your projects, only I want a mention or credit 😊
 
 ## Installation
 
