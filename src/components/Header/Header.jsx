@@ -6,7 +6,6 @@ export default function Header() {
   const [menuVisibility, setMenuVisibility] = useState(false)
   const handleMenu = () => {
     setMenuVisibility(!menuVisibility)
-    console.log(menuVisibility)
   }
   const screenSize = window.innerWidth
 
@@ -27,15 +26,23 @@ export default function Header() {
           </a>
         </div>
         <div className='col-start-5 md:hidden flex justify-center items-center'>
-          <button onClick={handleMenu} className='fixed z-20 right-0 text-2xl text-gray-300 p-5'>
-            <i className={`fa-solid ${menuVisibility ? 'fa-x':'fa-bars'}`}></i>
+          <button onClick={handleMenu} className='absolute z-20 right-0 text-2xl text-black p-5'>
+            {menuVisibility ? 
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+              </svg>
+              :
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>              
+            }
           </button>
         </div>
         <ul className={`lg:col-start-3 xl:col-start-4 col-span-6 md:col-start-3 md:flex ${menuVisibility ? 'flex flex-wrap items-center justify-center': 'hidden'}`}>  
-          <NavLinks text='Home' /> 
-          <NavLinks text='About us' />
-          <NavLinks text='Services' />
-          <NavLinks text='Contact' />       
+          <NavLinks text='Home' href='/'/> 
+          <NavLinks text='About us' href='#aboutus'/>
+          <NavLinks text='Services' href='#services'/>
+          <NavLinks text='Contact' href='#contact'/>       
         </ul>
       </div>
     </div>

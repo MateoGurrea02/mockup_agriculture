@@ -17,6 +17,13 @@ npm run dev
 ## Preview
 You can see a preview of this project in [Demo]() (not aviable yet)
 
+## Libraries and Components
+- [Tailwindcss](https://tailwindcss.com/)
+- [Heroicons](https://heroicons.com/)
+- [Web Components by Auroratide](https://components.auroratide.com/flip-card)
+- [Tailwindcss Animated](https://www.tailwindcss-animated.com/configurator.html)
+
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
