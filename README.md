@@ -6,7 +6,7 @@ This repository is a mockup for a agriculture landing page, develop for Mateo Gu
 
 - First at all, clone this repository in your Pc.
 ```bash
-git clone [url project]
+git clone https://github.com/MateoGurrea02/mockup_agriculture.git
 ```
 - And next run 
 ```bash
